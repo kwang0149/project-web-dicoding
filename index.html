@@ -21,7 +21,14 @@
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Projects</a></li>
-                    <li><a href="">Contact</a></li>
+                    <div class="dropdown">
+                        <li onclick="dropdown()" class="dropbutton">Contact</li>
+                        <div id="Dropdown" class="dropdown-content">
+                            <a href=""><i class="bi bi-instagram"></i> Instagram</a>
+                            <a href=""><i class="bi bi-facebook"></i> Facebook</a>
+                            <a href=""><i class="bi bi-twitter"></i> Twitter</a>
+                        </div>
+                    </div>
                 </ul>
             </div>
 
@@ -48,9 +55,6 @@
             </aside>
         </div>
         <div class="container fitur pb-5">
-            <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
-            <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
-    
             <div class="penjelasan-fitur pb-5">
                 <h2 class="text-center pb-3">
                     Tidak perlu mengantarkan resep dokter ke apotek, langsung terhubung real time oleh sistem

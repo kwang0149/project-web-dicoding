@@ -6,5 +6,20 @@ hamburger.addEventListener('click',function(){
 })
 
 
-
-
+function dropdown() {
+    document.getElementById("Dropdown").classList.toggle("show");
+  }
+  
+  window.onclick = (event)=> {
+    if (!event.target.matches('.dropbutton')) {
+        const dropdowns = document.querySelector("dropdown-content");
+        let i=0;
+        while (i < dropdowns.length) {
+            const openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+            i++;
+        }
+    }
+  }
